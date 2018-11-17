@@ -1,3 +1,6 @@
+trigger:
+- master
+
 resources:
   containers:
   - container: rust_image
