@@ -11,3 +11,11 @@ jobs:
   steps:
   - bash: cargo build
     workingDirectory: hello_cargo
+- job: guessing_game
+  displayName: Build Guessing Game
+  pool: 
+    vmImage: ubuntu-16.04
+  container: rust_image
+  steps:
+  - bash: cargo build
+    workingDirectory: guessing_game
