@@ -22,3 +22,13 @@ jobs:
   steps:
   - bash: cargo build
     workingDirectory: guessing_game
+- job: minigrep
+  displayName: Build MiniGrep
+  pool: 
+    vmImage: ubuntu-16.04
+  container: rust_image
+  steps:
+  - bash: cargo build
+    workingDirectory: minigrep
+  - bash: cargo test
+    workingDirectory: minigrep
